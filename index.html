@@ -8,6 +8,7 @@
     <title>MGLauncher</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -37,12 +38,17 @@
             <div id="infos">
 
                 <div id="items">
-                    <a onclick="myFunction()" download="MGLauncher.zip" id="download-btn"><button>Pobierz
-                            MGLauncher</button></a>
-                    <div id="line"></div>
-                    <div id="text">
+                    <a><button onclick="Download()" download="MGLauncher.zip" id="download-btn">Pobierz
+                            MGLauncher</button>
+                        <center>
+                            <div id="version">Wersja 1.12.2</div>
+                        </center>
+                    </a>
 
-                        <h1>Lista modów</h1>
+                    <div id="line"></div>
+                    <div id="lista">
+
+                        <h1 id="tytul">Lista modów</h1>
 
                         <ul>
                             <li>Aether</li>
@@ -73,7 +79,7 @@
                             <li>StorageDrawers</li>
                             <li>TreeCapitator</li>
                             <li>Twilight forest</li>
-                            <li>Xaeros WiekszaMapa</li>
+                            <li>Xaeros Minimap</li>
 
                         </ul>
 
@@ -98,10 +104,11 @@
 
         <center>
             <p style="line-height: 200px; user-select: none;">copyright © 2022 | all rights reserved</p>
+            <p style="font-weight: bold; user-select: none; font-size: 1.35vw;">Launcher Made By
+            <p id="dc" onclick="copyLink()"> po wielekroć#1998</p>
         </center>
-
-
     </footer>
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -120,69 +127,5 @@
         });
     });
 </script>
-<style>
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 400;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 100;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 200;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 300;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 500;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 600;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 700;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 800;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
-    }
-
-    @font-face {
-        font-family: 'SF Pro Display';
-        font-style: italic;
-        font-weight: 900;
-        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff') format('woff');
-    }
-</style>
 
 </html>

@@ -13,8 +13,76 @@
         margin: 0;
         height: 100%;
         max-width: 100%;
+        position: static;
     }
 
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 100;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYULTRALIGHTITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 200;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYTHINITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 300;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYLIGHTITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYMEDIUM.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 600;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYSEMIBOLDITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBOLD.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 800;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYHEAVYITALIC.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'SF Pro Display';
+        font-style: italic;
+        font-weight: 900;
+        src: local('SF Pro Display'), url('https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYBLACKITALIC.woff') format('woff');
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     #zdjecie {
         width: 30%;
@@ -89,24 +157,28 @@
     }
 
     a>button {
-        box-shadow: rgba(26, 81, 233, 0.517) 1px 1px 50px 4px;
+        box-shadow: rgba(255, 255, 255, 0.517) 1px 1px 50px 4px;
         cursor: pointer;
         font-weight: 600;
         font-size: 17px;
         color: white;
         background-color: #0066CC;
         outline: none;
-        border: #3923ff 1px solid;
+        border: #0066CC 1px solid;
         width: 300px;
         height: 50px;
         border-radius: 10px;
         text-shadow: 1px 1px #000000;
     }
 
+    a>button:hover {
+        background-color: #0b6ac9;
+    }
+
     #download-btn {
         margin-left: 150px;
-        /* z-index: 999; */
-        /* margin: 0;
+        /* z-index: 999;
+        margin: 0;
         position: relative;
         top: 50vh;
         left: 10%;
@@ -124,19 +196,29 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 2px;
+        width: 0.2%;
         height: 80%;
         background-color: rgb(230, 230, 230)
     }
 
-    #text {
+    #lista {
         position: relative;
-        width: 600px;
+        width: 40%;
         right: 0px;
         top: -45%;
+        font-size: 1.2vw;
+
 
     }
 
+    #tytul {
+        font-size: 3.5vw;
+        margin-top: -5px;
+    }
+
+    #tytul:hover {
+        color: #0066CC;
+    }
 
     #items {
         height: 100%;
@@ -144,4 +226,20 @@
         top: 50%;
         justify-content: space-between;
         display: flex;
+    }
+
+    #version {
+        margin-left: 30%;
+        margin-top: 10px;
+        font-size: 1.3vw;
+        font-weight: bold;
+    }
+
+    #version:hover {
+        color: #1288fd;
+    }
+
+    #dc {
+        font-style: italic;
+        font-size: 25px;
     }

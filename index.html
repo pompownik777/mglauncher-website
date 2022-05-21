@@ -8,7 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGLauncher</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="style-other.css">
+    <link rel="stylesheet" href="style-all.css">
+    <meta name="description" content="Launcher do paczki modów Minecraft - MGLauncher ">
+    <meta name="keywords" content="launcher, mateuszpack, paczka modów, mglauncher">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://kit.fontawesome.com/702fe8cfd9.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -39,11 +46,17 @@
             <div id="infos">
 
                 <div id="items">
+
+                    <img draggable="false" id="launcherimg" src="img/launcher2.png" alt="">
                     <a><button onclick="Download()" download="MGLauncher.zip" id="download-btn">Pobierz
                             MGLauncher</button>
                         <center>
-                            <div id="version">Wersja 1.12.2</div>
+                            <br>
+                            <div id="version">Wersja Minecraft'a: 1.12.2</div>
+                            <div id="versionl">Launcher: 2.0</div>
                         </center>
+
+
                     </a>
 
                     <div id="line"></div>
@@ -101,14 +114,15 @@
 
 
     </div>
-    <footer style="color: white;">
+    <div style="color: white;">
 
         <center>
             <p style="line-height: 200px; user-select: none;">copyright © 2022 | all rights reserved</p>
-            <p style="font-weight: bold; user-select: none; font-size: 1.35vw;">Launcher Made By
-            <p id="dc" onclick="copyLink()"> po wielekroć#1998</p>
+            <p style="font-weight: bold; user-select: none; font-size: 3.25vw;">by
+            <p id="dc" onclick="copyLink()"> <i class="fab fa-discord"></i> żyrafka na biegunach#1998</p>
+            <p id="git" class="icon-github-squared" onclick="copyLink()">pompownik777</p>
         </center>
-    </footer>
+    </div>
 
 
 </body>

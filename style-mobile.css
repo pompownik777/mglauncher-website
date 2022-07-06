@@ -243,16 +243,6 @@
         height: 107%;
     }
 
-    #line {
-
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 0.2%;
-        height: 20%;
-        margin-top: -250px;
-        background-color: rgb(230, 230, 230)
-    }
-
     #lista {
         position: relative;
         width: 40%;
